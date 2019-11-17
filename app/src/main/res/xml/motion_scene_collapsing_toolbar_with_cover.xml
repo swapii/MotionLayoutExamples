@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
         app:constraintSetEnd="@layout/collapsing_toolbar_with_cover_end"
@@ -17,44 +16,42 @@
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="70"
-                motion:target="@id/title" />
+                app:framePosition="70"
+                app:motionTarget="@id/title" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="80"
-                motion:target="@id/toolbarIconContainer" />
+                app:framePosition="80"
+                app:motionTarget="@id/toolbarIconContainer" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="70"
-                motion:target="@id/backButton" />
+                app:framePosition="70"
+                app:motionTarget="@id/backButton" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="70"
-                motion:target="@id/backButton2" />
+                app:framePosition="70"
+                app:motionTarget="@id/backButton2" />
 
 
             <KeyAttribute
                 android:alpha="1"
-                motion:framePosition="90"
-                motion:target="@id/backButton2" />
+                app:framePosition="90"
+                app:motionTarget="@id/backButton2" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="70"
-                motion:target="@id/toolbarTitle" />
+                app:framePosition="70"
+                app:motionTarget="@id/toolbarTitle" />
 
             <KeyAttribute
                 android:alpha="1"
-                motion:framePosition="90"
-                motion:target="@id/toolbarTitle" />
+                app:framePosition="90"
+                app:motionTarget="@id/toolbarTitle" />
 
         </KeyFrameSet>
 
     </Transition>
-
-
 
 </MotionScene>

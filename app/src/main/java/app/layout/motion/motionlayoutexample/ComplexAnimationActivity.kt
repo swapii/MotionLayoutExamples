@@ -11,6 +11,7 @@ import androidx.constraintlayout.motion.widget.MotionLayout
 
 
 class ComplexAnimationActivity: AppCompatActivity(), MotionLayout.TransitionListener {
+
     private val motionLayout by lazy {
         findViewById<MotionLayout>(R.id.motionLayout)
     }
@@ -31,8 +32,11 @@ class ComplexAnimationActivity: AppCompatActivity(), MotionLayout.TransitionList
 
     var layoutId = 0
 
-    override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) {
-    }
+    override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, p3: Float) = Unit
+
+    override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) = Unit
+
+    override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) = Unit
 
     override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
         if(p0 == null)
@@ -45,7 +49,6 @@ class ComplexAnimationActivity: AppCompatActivity(), MotionLayout.TransitionList
             doBounceAnimation(shareImage)
             doBounceAnimation(seenImage)
         }
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,4 +72,5 @@ class ComplexAnimationActivity: AppCompatActivity(), MotionLayout.TransitionList
         animator.duration = 1000
         animator.start()
     }
+
 }

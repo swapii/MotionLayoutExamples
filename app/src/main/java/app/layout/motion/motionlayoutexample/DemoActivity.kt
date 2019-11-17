@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class DemoActivity : AppCompatActivity(), MotionLayout.TransitionListener {
+
     var motionLayout: MotionLayout? = null
     var recyclerView: RecyclerView? = null
     var layout = R.layout.collapsing_toolbar
@@ -70,6 +71,10 @@ class DemoActivity : AppCompatActivity(), MotionLayout.TransitionListener {
             titleTextView = findViewById(R.id.title)
         }
     }
+
+    override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, p3: Float) = Unit
+
+    override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) = Unit
 
     override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, progress: Float) {
         if (p0 == null)

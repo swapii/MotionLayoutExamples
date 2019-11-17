@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
         app:constraintSetEnd="@layout/complex_animation_example_end"
@@ -18,69 +17,69 @@
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="0"
-                motion:target="@id/text3" />
+                app:framePosition="0"
+                app:motionTarget="@id/text3" />
 
             <KeyAttribute
                 android:scaleX="1.1"
                 android:scaleY="1.1"
-                motion:framePosition="50"
-                motion:target="@id/text3" />
+                app:framePosition="50"
+                app:motionTarget="@id/text3" />
 
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="100"
-                motion:target="@id/text3" />
+                app:framePosition="100"
+                app:motionTarget="@id/text3" />
 
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="0"
-                motion:target="@id/text1" />
+                app:framePosition="0"
+                app:motionTarget="@id/text1" />
 
             <KeyAttribute
                 android:scaleX="1.1"
                 android:scaleY="1.1"
-                motion:framePosition="50"
-                motion:target="@id/text1" />
+                app:framePosition="50"
+                app:motionTarget="@id/text1" />
 
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="100"
-                motion:target="@id/text1" />
+                app:framePosition="100"
+                app:motionTarget="@id/text1" />
 
 
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="0"
-                motion:target="@id/text2" />
+                app:framePosition="0"
+                app:motionTarget="@id/text2" />
 
             <KeyAttribute
                 android:scaleX="1.1"
                 android:scaleY="1.1"
-                motion:framePosition="50"
-                motion:target="@id/text2" />
+                app:framePosition="50"
+                app:motionTarget="@id/text2" />
 
             <KeyAttribute
                 android:scaleX="1"
                 android:scaleY="1"
-                motion:framePosition="100"
-                motion:target="@id/text2" />
+                app:framePosition="100"
+                app:motionTarget="@id/text2" />
 
             <!--<KeyAttribute-->
                 <!--android:scaleX="1.1"-->
                 <!--android:scaleY="1.1"-->
-                <!--motion:framePosition="95"-->
-                <!--motion:target="@id/mainImage2" />-->
+                <!--app:framePosition="95"-->
+                <!--app:motionTarget="@id/mainImage2" />-->
 
             <!--<KeyAttribute-->
                 <!--android:scaleX="1"-->
                 <!--android:scaleY="1"-->
-                <!--motion:framePosition="100"-->
-                <!--motion:target="@id/mainImage2" />-->
+                <!--app:framePosition="100"-->
+                <!--app:motionTarget="@id/mainImage2" />-->
 
 
         </KeyFrameSet>

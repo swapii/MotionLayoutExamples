@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
         app:constraintSetEnd="@layout/collapsing_toolbar_2_end"
         app:constraintSetStart="@layout/collapsing_toolbar_2"
         app:duration="500"
-        motion:interpolator="linear">
+        app:motionInterpolator="linear">
 
         <OnSwipe
             app:dragDirection="dragUp"
@@ -18,8 +17,8 @@
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="45"
-                motion:target="@id/desc" />
+                app:framePosition="45"
+                app:motionTarget="@id/desc" />
 
         </KeyFrameSet>
 
